@@ -16,7 +16,7 @@ export default function Home() {
       <div className={styles.center}>
         <h1 className={styles.title}>Liv Defectors</h1>
         
-        <p>Fairways and Greens, That's how we roll.</p>
+        <p>Fairways and Greens, That&apos;s how we roll.</p>
       </div>
 
       <div className={styles.grid}>

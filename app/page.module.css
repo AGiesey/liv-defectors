@@ -74,6 +74,7 @@
 
 .center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -107,6 +108,12 @@
 .logo {
   position: relative;
 }
+
+.title {
+  display: inline;
+  font-size: 5em;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {

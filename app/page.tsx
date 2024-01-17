@@ -5,12 +5,12 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>
-          The Majestic at Lake Walden. Heartland, Michigan.
-        </p>
         <div>
           <p>Est. 2024</p>
         </div>
+        <p>
+          The Majestic at Lake Walden. Heartland, Michigan.
+        </p>
       </div>
 
       <div className={styles.center}>

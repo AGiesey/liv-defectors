@@ -1,0 +1,19 @@
+@import './variables.module.scss';
+
+.header {
+    position: fixed;
+    top: 0;
+    height: 60px;
+    min-width: 100%;
+
+    display: flex;
+    align-items: center;
+    background: $green;
+    color: $white;
+    padding: $spacer-sm;
+
+    .pageTitle {
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+}

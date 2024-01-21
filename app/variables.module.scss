@@ -1,0 +1,28 @@
+// Colors
+$green: #3CB371;        // Medium Sea Green
+$yellow: #FFD700;       // Gold
+$red: #DC143C;          // Crimson
+$blue: #4169E1;         // Royal Blue
+
+// Shades of Grey
+$grey-light: #666;      // Light Grey
+$grey-medium: #333;     // Medium Grey
+$grey-dark: #111;       // Dark Grey
+
+// Shades of White
+$white-light: #FAFAFA;  // Light White
+$white: #F5F5F5;        // Regular White
+$white-dark: #F0F0F0;    // Dark White
+
+$spacer-sm: 8px;
+$spacer-md: 16px;
+$spacer-lg: 32px;
+
+@mixin flex {
+    display: flex;
+}
+
+@mixin flex-column {
+    @include flex;
+    flex-direction: column;
+}

@@ -1,11 +1,10 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from './page.module.scss';
 
 export default function Home() {
   //Copy Golf League Guru if you want to make a league tracker
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
+      <div>
         <div>
           <p>Est. 2024</p>
         </div>
@@ -14,15 +13,16 @@ export default function Home() {
         </p>
       </div>
 
-      <div className={styles.center}>
-        <h1 className={styles.title}>Liv Defectors</h1>
+      <div>
+        <h1>Liv Defectors</h1>
         
         <p>Fairways and Greens, That&apos;s how we roll.</p>
       </div>
 
-      <div className={styles.grid}>
+      <div>
 
       </div>
     </main>
   )
 }
+

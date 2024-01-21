@@ -1,0 +1,28 @@
+@import './variables.module.scss';
+
+.wrapper {
+    @include flex;
+    width: 250px;
+    min-height: 100vh;
+    padding-top: 70px;
+    background: $grey-dark;
+    color: $grey-light;
+}
+
+.nav {
+    @include flex-column;
+    flex-grow: 1;
+}
+
+.link {
+    @include flex-column;
+    justify-content: center;
+    height: 30px;
+    padding-left: $spacer-md;
+    
+    &.active {
+        background: $grey-medium;
+        color: $white-dark;
+    }
+}
+

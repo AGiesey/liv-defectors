@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,8 +1,7 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import type { Metadata } from 'next';
+import './globals.scss'
+import Sidebar from './sidebar';
+import Header from './header';
 
 export const metadata: Metadata = {
   title: 'Liv Defectors',
@@ -16,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <Header />
+        <Sidebar />
+        {children}
+      </body>
     </html>
   )
 }

@@ -1,15 +1,10 @@
 'use client';
-import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import styles from './sidebar.module.scss';
 import Link from 'next/link';
 
 export default function Sidebar() {
     const pathname = usePathname();
-
-    useEffect(() => {
-        console.log(pathname);
-    }, [pathname]);
 
     return (
         <aside className={styles.wrapper}>

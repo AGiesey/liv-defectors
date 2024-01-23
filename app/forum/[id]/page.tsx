@@ -1,7 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import styles from '../../page.module.scss';
+import styles from '@/app/page.module.scss';
 
 export default function Forum({ params }: { params: { id: number } }) {
     const router = useRouter();

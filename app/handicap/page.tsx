@@ -1,4 +1,4 @@
-import styles from '../page.module.scss';
+import styles from '@/app/page.module.scss';
 export default function Forum() {
     return (
         <main className={styles.main}>

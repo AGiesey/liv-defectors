@@ -2,7 +2,6 @@
 
 .main {
   @include flex-column;
-  border: 3px solid purple;
   padding: $spacer-md;
   min-height: calc(100% - $header-height);
   margin-top: $header-height;

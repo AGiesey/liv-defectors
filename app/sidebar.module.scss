@@ -2,9 +2,9 @@
 
 .wrapper {
     @include flex;
-    width: 250px;
+    width: $sidebar-width;
     min-height: 100vh;
-    padding-top: 70px;
+    padding-top: calc($header-height + $spacer-md);
     background: $grey-dark;
     color: $grey-light;
 }
@@ -17,7 +17,7 @@
 .link {
     @include flex-column;
     justify-content: center;
-    height: 30px;
+    height: 35px;
     padding-left: $spacer-md;
     
     &.active {

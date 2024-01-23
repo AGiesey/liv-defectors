@@ -18,6 +18,9 @@ $spacer-sm: 8px;
 $spacer-md: 16px;
 $spacer-lg: 32px;
 
+$header-height: 60px;
+$sidebar-width: 250px;
+
 @mixin flex {
     display: flex;
 }

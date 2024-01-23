@@ -1,0 +1,1299 @@
+[
+    {
+        "likes": [],
+        "_id": "6449455bc98a5ca12aa28ebf",
+        "name": "Hunters Ridge Golf Course",
+        "phone": "517.545.4653",
+        "website": "http://www.golfhuntersridge.com",
+        "address": "8101 Byron",
+        "city": "Howell",
+        "state": "Michigan",
+        "zip": "48855",
+        "country": "United States",
+        "coordinates": "(42.719208, -83.973022)",
+        "holes": "18",
+        "lengthFormat": "Y",
+        "greenGrass": "",
+        "fairwayGrass": "",
+        "scorecard": [
+            {
+                "Hole": 1,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 386
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 347
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 327
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 256
+                    }
+                },
+                "Handicap": 11
+            },
+            {
+                "Hole": 2,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 403
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 377
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 339
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 287
+                    }
+                },
+                "Handicap": 7
+            },
+            {
+                "Hole": 3,
+                "Par": 3,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 184
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 153
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 128
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 112
+                    }
+                },
+                "Handicap": 13
+            },
+            {
+                "Hole": 4,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 384
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 349
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 308
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 261
+                    }
+                },
+                "Handicap": 1
+            },
+            {
+                "Hole": 5,
+                "Par": 3,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 199
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 176
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 147
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 116
+                    }
+                },
+                "Handicap": 5
+            },
+            {
+                "Hole": 6,
+                "Par": 5,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 543
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 495
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 485
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 433
+                    }
+                },
+                "Handicap": 3
+            },
+            {
+                "Hole": 7,
+                "Par": 3,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 168
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 131
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 117
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 75
+                    }
+                },
+                "Handicap": 17
+            },
+            {
+                "Hole": 8,
+                "Par": 5,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 485
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 448
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 435
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 353
+                    }
+                },
+                "Handicap": 15
+            },
+            {
+                "Hole": 9,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 342
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 333
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 304
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 262
+                    }
+                },
+                "Handicap": 9
+            },
+            {
+                "Hole": 10,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 421
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 374
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 364
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 339
+                    }
+                },
+                "Handicap": 8
+            },
+            {
+                "Hole": 11,
+                "Par": 3,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 201
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 171
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 169
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 137
+                    }
+                },
+                "Handicap": 12
+            },
+            {
+                "Hole": 12,
+                "Par": 5,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 530
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 490
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 478
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 422
+                    }
+                },
+                "Handicap": 6
+            },
+            {
+                "Hole": 13,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 369
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 314
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 303
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 266
+                    }
+                },
+                "Handicap": 14
+            },
+            {
+                "Hole": 14,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 408
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 335
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 318
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 273
+                    }
+                },
+                "Handicap": 18
+            },
+            {
+                "Hole": 15,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 363
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 345
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 337
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 278
+                    }
+                },
+                "Handicap": 10
+            },
+            {
+                "Hole": 16,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 424
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 386
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 335
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 261
+                    }
+                },
+                "Handicap": 4
+            },
+            {
+                "Hole": 17,
+                "Par": 3,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 191
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 156
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 139
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 104
+                    }
+                },
+                "Handicap": 16
+            },
+            {
+                "Hole": 18,
+                "Par": 5,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Gold",
+                        "yards": 556
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 547
+                    },
+                    "teeBox3": {
+                        "color": "White",
+                        "yards": 449
+                    },
+                    "teeBox4": {
+                        "color": "Red",
+                        "yards": 389
+                    }
+                },
+                "Handicap": 2
+            }
+        ],
+        "teeBoxes": [
+            {
+                "tee": "Gold",
+                "slope": 131,
+                "handicap": 72.2
+            },
+            {
+                "tee": "Blue",
+                "slope": 125,
+                "handicap": 69.2
+            },
+            {
+                "tee": "White",
+                "slope": 119,
+                "handicap": 67
+            },
+            {
+                "tee": "Red",
+                "slope": 115,
+                "handicap": 67.3
+            }
+        ],
+        "createdAt": "2023-04-26T15:38:03.711Z",
+        "updatedAt": "2023-04-26T15:38:03.711Z",
+        "__v": 0
+    },
+    {
+        "likes": [],
+        "_id": "6449455bc98a5ca12aa28ebe",
+        "name": "Hunters Ridge Golf Course",
+        "phone": "815-875-1151",
+        "website": "http://www.huntersridgegc.com/",
+        "address": "12927 IL Hwy 26",
+        "city": "Princeton",
+        "state": "Illinois",
+        "zip": "61356",
+        "country": "United States",
+        "coordinates": "(41.327003, -89.422379)",
+        "holes": "18",
+        "lengthFormat": "Y",
+        "greenGrass": "",
+        "fairwayGrass": "",
+        "scorecard": [
+            {
+                "Hole": 1,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 250
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 238
+                    }
+                },
+                "Handicap": 15
+            },
+            {
+                "Hole": 2,
+                "Par": 5,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 514
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 498
+                    }
+                },
+                "Handicap": 7
+            },
+            {
+                "Hole": 3,
+                "Par": 5,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 472
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 462
+                    }
+                },
+                "Handicap": 8
+            },
+            {
+                "Hole": 4,
+                "Par": 3,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 155
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 145
+                    }
+                },
+                "Handicap": 17
+            },
+            {
+                "Hole": 5,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 436
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 420
+                    }
+                },
+                "Handicap": 5
+            },
+            {
+                "Hole": 6,
+                "Par": 3,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 193
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 168
+                    }
+                },
+                "Handicap": 10
+            },
+            {
+                "Hole": 7,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 440
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 369
+                    }
+                },
+                "Handicap": 3
+            },
+            {
+                "Hole": 8,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 305
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 295
+                    }
+                },
+                "Handicap": 14
+            },
+            {
+                "Hole": 9,
+                "Par": 5,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 476
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 466
+                    }
+                },
+                "Handicap": 6
+            },
+            {
+                "Hole": 10,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 378
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 368
+                    }
+                },
+                "Handicap": 9
+            },
+            {
+                "Hole": 11,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 376
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 362
+                    }
+                },
+                "Handicap": 12
+            },
+            {
+                "Hole": 12,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 404
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 396
+                    }
+                },
+                "Handicap": 2
+            },
+            {
+                "Hole": 13,
+                "Par": 3,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 172
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 162
+                    }
+                },
+                "Handicap": 16
+            },
+            {
+                "Hole": 14,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 361
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 351
+                    }
+                },
+                "Handicap": 11
+            },
+            {
+                "Hole": 15,
+                "Par": 5,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 500
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 473
+                    }
+                },
+                "Handicap": 1
+            },
+            {
+                "Hole": 16,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 436
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 422
+                    }
+                },
+                "Handicap": 4
+            },
+            {
+                "Hole": 17,
+                "Par": 3,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 122
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 108
+                    }
+                },
+                "Handicap": 18
+            },
+            {
+                "Hole": 18,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "blue",
+                        "yards": 347
+                    },
+                    "teeBox2": {
+                        "color": "white",
+                        "yards": 327
+                    }
+                },
+                "Handicap": 13
+            }
+        ],
+        "teeBoxes": [
+            {
+                "tee": "blue",
+                "slope": 113,
+                "handicap": 70
+            },
+            {
+                "tee": "white",
+                "slope": 113,
+                "handicap": 70
+            }
+        ],
+        "createdAt": "2023-04-26T15:38:03.711Z",
+        "updatedAt": "2023-04-26T15:38:03.711Z",
+        "__v": 0
+    },
+    {
+        "likes": [],
+        "_id": "6449455bc98a5ca12aa28ebd",
+        "name": "Hunters Ridge",
+        "phone": "319-377-3500",
+        "website": "www.hrgolfcourse.com",
+        "address": "2901 Hunters Ridge Rd.",
+        "city": "Marion",
+        "state": "Iowa",
+        "zip": "52302",
+        "country": "United States",
+        "coordinates": "(42.075237, -91.582367)",
+        "holes": "18",
+        "lengthFormat": "Y",
+        "greenGrass": "bent",
+        "fairwayGrass": "bent",
+        "scorecard": [
+            {
+                "Hole": 1,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 388
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 365
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 365
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 331
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 6
+            },
+            {
+                "Hole": 2,
+                "Par": 5,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 520
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 508
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 508
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 478
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 10
+            },
+            {
+                "Hole": 3,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 422
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 387
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 372
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 334
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 14
+            },
+            {
+                "Hole": 4,
+                "Par": 3,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 166
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 142
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 142
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 105
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 8
+            },
+            {
+                "Hole": 5,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 392
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 361
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 361
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 335
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 16
+            },
+            {
+                "Hole": 6,
+                "Par": 5,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 590
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 558
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 530
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 482
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 2
+            },
+            {
+                "Hole": 7,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 423
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 389
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 361
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 356
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 12
+            },
+            {
+                "Hole": 8,
+                "Par": 3,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 170
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 153
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 153
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 115
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 18
+            },
+            {
+                "Hole": 9,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 431
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 409
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 382
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 325
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 4
+            },
+            {
+                "Hole": 10,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 420
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 385
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 385
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 361
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 13
+            },
+            {
+                "Hole": 11,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 435
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 398
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 386
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 330
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 9
+            },
+            {
+                "Hole": 12,
+                "Par": 5,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 523
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 504
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 504
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 416
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 5
+            },
+            {
+                "Hole": 13,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 361
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 346
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 346
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 275
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 1
+            },
+            {
+                "Hole": 14,
+                "Par": 3,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 189
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 178
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 134
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 132
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 11
+            },
+            {
+                "Hole": 15,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 335
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 302
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 302
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 250
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 15
+            },
+            {
+                "Hole": 16,
+                "Par": 3,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 201
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 189
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 189
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 130
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 17
+            },
+            {
+                "Hole": 17,
+                "Par": 5,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 613
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 544
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 500
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 410
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 7
+            },
+            {
+                "Hole": 18,
+                "Par": 4,
+                "tees": {
+                    "teeBox1": {
+                        "color": "Green",
+                        "yards": 428
+                    },
+                    "teeBox2": {
+                        "color": "Blue",
+                        "yards": 409
+                    },
+                    "teeBox3": {
+                        "color": "Blue_White_combo",
+                        "yards": 380
+                    },
+                    "teeBox4": {
+                        "color": "Silver",
+                        "yards": 340
+                    },
+                    "teeBox5": {
+                        "color": "White",
+                        "yards": 0
+                    }
+                },
+                "Handicap": 3
+            }
+        ],
+        "teeBoxes": [
+            {
+                "tee": "Green",
+                "slope": 132,
+                "handicap": 74.1
+            },
+            {
+                "tee": "Blue",
+                "slope": 126,
+                "handicap": 71.8
+            },
+            {
+                "tee": "Blue/White combo",
+                "slope": 121,
+                "handicap": 71.4
+            },
+            {
+                "tee": "Silver",
+                "slope": 119,
+                "handicap": 67.6
+            },
+            {
+                "tee": "White",
+                "slope": 119,
+                "handicap": 69.3
+            }
+        ],
+        "createdAt": "2023-04-26T15:38:03.711Z",
+        "updatedAt": "2023-04-26T15:38:03.711Z",
+        "__v": 0
+    }
+]

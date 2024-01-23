@@ -1,10 +1,9 @@
 import huntersRidge from './dummy-data/hunters-ridge-search.json';
 
-export function findCourses(search: string): Promise<any> {
-    // env vars public until I figure out server/client better
-    const apiKey = process.env.NEXT_PUBLIC_RAPID_API_KEY;
-    const apiHost = process.env.NEXT_PUBLIC_RAPID_API_HOST;
-    const useDummyData = process.env.NEXT_PUBLIC_USE_DUMMY_DATA;
+export async function  findCourses(search: string): Promise<any> {
+    const apiKey = process.env.RAPID_API_KEY;
+    const apiHost = process.env.RAPID_API_HOST;
+    const useDummyData = process.env.USE_DUMMY_DATA;
 
     if (useDummyData) {
         return Promise.resolve(huntersRidge);
@@ -24,7 +23,7 @@ export function findCourses(search: string): Promise<any> {
     })
     const urlWithParams = `${url}?${query.toString()}`;
 
-    return fetch(urlWithParams, {
+    return await fetch(urlWithParams, {
         method: 'GET',
         headers
     })

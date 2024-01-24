@@ -3,14 +3,15 @@ import huntersRidge from './dummy-data/hunters-ridge-search.json';
 export async function  findCourses(search: string): Promise<any> {
     const apiKey = process.env.RAPID_API_KEY;
     const apiHost = process.env.RAPID_API_HOST;
-    const useDummyData = process.env.USE_DUMMY_DATA;
+    const useDummyData = process.env.USE_DUMMY_DATA === 'true';
 
     if (useDummyData) {
+        console.log('Fetching courses using dummy data, use search value "hunters ridge"');
         return Promise.resolve(huntersRidge);
     }
 
     if (!apiKey || !apiHost) {
-        return Promise.reject("Missing API Key or API Host");
+        return Promise.reject('Missing API Key or API Host');
     }
     
     const url = `https://${apiHost}/search`;

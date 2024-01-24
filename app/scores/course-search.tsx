@@ -1,9 +1,10 @@
 "use client";
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 
 export default function CourseSearch() {
     const router = useRouter();
+    const path = usePathname();
     const [searchValue, setSearchValue] = useState<string>('');
 
     const goToResults = () => {
@@ -11,7 +12,7 @@ export default function CourseSearch() {
             //TODO: show an error;
             return;
         }
-        router.push(`/scores/${searchValue}`);
+        router.push(`${path}/${searchValue}`);
     }
 
     return (

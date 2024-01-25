@@ -1,20 +1,46 @@
 "use client";
 import styles from './scorecard.module.scss';
-import {useState} from 'react';
+import {useState, useReducer} from 'react';
 import { Course } from '@/types/course';
 import { Hole } from '@/types/hole';
-
+import { Scorecard } from '@/types/scorecard';
+import scorecardReducer, {ActionTypes, buildDefaultScorecard} from './scorecardReducer';
 
 export default function Scorecard({course}: {course: Course}) {
-    const { scorecard }: { scorecard: Hole[] } = course;
+    const { scorecard, name }: { scorecard: Hole[], name: string } = course;
     
     const outNine: Hole[] = scorecard.slice(0, 9);
-    const inNine: Hole[] = scorecard.slice(9, 17);
+    const inNine: Hole[] = scorecard.slice(9);
     
     const [selectedNine, setSelectedNine] = useState<Hole[]>(outNine);
 
+    const [scorecardState, scorecardDispatch] = useReducer(scorecardReducer, buildDefaultScorecard(course));
+
+    const updateScorecard = (e: React.FocusEvent<HTMLInputElement>): void => {
+        const holeNumber = parseInt(e.currentTarget.id);
+        const strokes = parseInt(e.currentTarget.value);
+        if (Number.isNaN(holeNumber) || Number.isNaN(strokes)) {
+            return;
+        }
+
+        //TODO: figure out how and when to total up the score.
+
+        scorecardDispatch({type: ActionTypes.UPDATE_STROKES, payload: {hole: holeNumber, strokes}});        
+    }
+
+    const toggleEditMode = (e: React.MouseEvent<HTMLDivElement>): void => {
+        //TODO: implement;
+    }
+    
     return (
         <div className={styles.main}>
+            <div>
+                <label htmlFor="nameEntry">Enter your name:</label>
+                <input
+                    type="text"
+                    id="nameEntry"
+                    onBlur={(e: React.FocusEvent<HTMLInputElement>) => scorecardDispatch({type: ActionTypes.UPDATE_PLAYER_NAME, payload: e.currentTarget.value})}/>
+            </div>
             <div className={styles.cardGrid}>
             
 
@@ -27,7 +53,7 @@ export default function Scorecard({course}: {course: Course}) {
                         )
                 }
                 
-                <div className={styles.headerRow}>out</div>
+                <div className={styles.headerRow}>{JSON.stringify(selectedNine) === JSON.stringify(outNine) ? 'OUT' : 'IN'}</div>
 
                 <div>HCP</div>
                 
@@ -51,16 +77,27 @@ export default function Scorecard({course}: {course: Course}) {
 
                 <div>{selectedNine.reduce((total, current) => {return total += current.Par}, 0)}</div>
                 
-                <div>Score</div>
+                <div>{scorecardState?.playerName ?? 'Score'}</div>
 
                 {
                     selectedNine && selectedNine
                         .map(({Hole}) => 
-                            <div key={Hole}></div>
+                            <div key={Hole} onClick={toggleEditMode}>
+                                <input
+                                    type="text"
+                                    // These arent stopping me from entering non positive integers
+                                    inputMode="numeric" 
+                                    pattern="[0-9]*"
+                                    id={Hole.toString()}
+                                    className={styles.scoreInput}
+                                    onBlur={updateScorecard}/>
+                            </div>
                         )
                 }
 
-                <div></div>
+                <div>
+                    
+                </div>
                 
 
             </div>

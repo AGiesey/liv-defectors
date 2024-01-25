@@ -10,8 +10,6 @@ export default async function Course({ params }: { params: { course: string, id:
     const course = coursesList
         .find((x: Course) => x._id === params.id)
 
-    console.log("Scorecard", course);
-    
 
     //TODO: add some error handling in case course is undefined
 

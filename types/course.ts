@@ -1,6 +1,10 @@
 import {Hole} from './hole';
 import {Teebox} from './teebox';
 
+/**
+ * This is the root data model I get from Golf Course API. 
+ * https://rapidapi.com/foshesco-65zCww9c1y0/api/golf-course-api/
+ */
 export interface Course {
     address: string,
     city: string,

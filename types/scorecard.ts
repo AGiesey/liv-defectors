@@ -3,10 +3,11 @@ export interface Scorecard {
     course: string;
     playerName?: string,
     tee?: string,
-    plusMinus?: number,
+    plusMinus: number,
+    score: number,
     strokes?:number,
     [holeNumber: number]: {
-        par?: number,
+        par: number,
         strokes?: number,
         //todo: it would be fun to add metrics such as putts, gir, fairway, etc...
     };

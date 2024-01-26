@@ -1,10 +1,10 @@
 "use client";
 import styles from './scorecard.module.scss';
-import {useState, useReducer} from 'react';
+import {useState, useEffect, useReducer} from 'react';
 import { Course } from '@/types/course';
 import { Hole } from '@/types/hole';
 import { Scorecard } from '@/types/scorecard';
-import scorecardReducer, {ActionTypes, buildDefaultScorecard} from './scorecardReducer';
+import scorecardReducer, {ActionTypes, buildDefaultScorecard} from './scorecard-reducer';
 
 export default function Scorecard({course}: {course: Course}) {
     const { scorecard, name }: { scorecard: Hole[], name: string } = course;
@@ -13,8 +13,20 @@ export default function Scorecard({course}: {course: Course}) {
     const inNine: Hole[] = scorecard.slice(9);
     
     const [selectedNine, setSelectedNine] = useState<Hole[]>(outNine);
+    const [displayableTotal, setDisplayableTotal] = useState<string>('');
 
     const [scorecardState, scorecardDispatch] = useReducer(scorecardReducer, buildDefaultScorecard(course));
+
+    useEffect(() => {
+        const {plusMinus} = scorecardState;
+        if (plusMinus === undefined) {
+            return;
+        } else if (plusMinus === 0) {
+            setDisplayableTotal('Even');
+            return;
+        } 
+        setDisplayableTotal(plusMinus > 0 ? `+${plusMinus}` : plusMinus.toString())
+    }, [scorecardState]);
 
     const updateScorecard = (e: React.FocusEvent<HTMLInputElement>): void => {
         const holeNumber = parseInt(e.currentTarget.id);
@@ -96,7 +108,7 @@ export default function Scorecard({course}: {course: Course}) {
                 }
 
                 <div>
-                    
+                    {displayableTotal}
                 </div>
                 
 

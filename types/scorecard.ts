@@ -4,8 +4,7 @@ export interface Scorecard {
     playerName?: string,
     tee?: string,
     plusMinus: number,
-    score: number,
-    strokes?:number,
+    strokes: number,
     [holeNumber: number]: {
         par: number,
         strokes?: number,

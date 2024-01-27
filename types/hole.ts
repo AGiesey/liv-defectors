@@ -1,4 +1,4 @@
-import {Teebox} from './teebox';
+import {ScorecardTeebox} from './scorecard-teebox';
 
 /**
  * from https://rapidapi.com/foshesco-65zCww9c1y0/api/golf-course-api/
@@ -8,5 +8,5 @@ export interface Hole {
     Handicap: number,
     Hole: number,
     Par: number,
-    tees: {string: Teebox}
+    tees: {[teeBox: string]: ScorecardTeebox}
 }

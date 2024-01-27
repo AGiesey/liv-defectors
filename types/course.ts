@@ -20,7 +20,7 @@ export interface Course {
     phone: string,
     scorecard: Hole[],
     state: string,
-    teeboxes: Teebox[],
+    teeBoxes: Teebox[],
     updatedAt: string,
     website: string,
     zip: string,

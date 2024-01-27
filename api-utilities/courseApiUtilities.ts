@@ -1,6 +1,7 @@
 import huntersRidge from './dummy-data/hunters-ridge-search.json';
+import { Course } from '@/types/course';
 
-export async function  findCourses(search: string): Promise<any> {
+export async function  findCourses(search: string): Promise<Course[]> {
     const apiKey = process.env.RAPID_API_KEY;
     const apiHost = process.env.RAPID_API_HOST;
     const useDummyData = process.env.USE_DUMMY_DATA === 'true';

@@ -12,18 +12,23 @@ interface Action  {
     payload: any
 }
 
-const calculateTotals = (scorecard: Scorecard): {plusMinus: number, total: number} => {
+interface Totals {
+    plusMinus: number, 
+    total: number
+}
+
+const calculateTotals = (scorecard: Scorecard): Totals => {
     const scorecardHoles = Object.values(scorecard)
         .filter(item => item instanceof Object && 'par' in item);
 
-    return scorecardHoles.reduce((tuple: {plusMinus: number, total: number}, hole: {par: number, strokes?: number}) => {
+    return scorecardHoles.reduce((runningTotal: Totals, hole: {par: number, strokes?: number}) => {
         const {par, strokes} = hole;
         if (strokes && strokes > 0) {
-            tuple.plusMinus += (strokes - par);
-            tuple.total += strokes
+            runningTotal.plusMinus += (strokes - par);
+            runningTotal.total += strokes
         }
 
-        return tuple;
+        return runningTotal;
     }, {plusMinus: 0, total: 0})
 
 }
@@ -32,17 +37,22 @@ const scorecardReducer = (state: Scorecard, action: Action): Scorecard => {
     const {type, payload} = action;
     switch(type) {
        case ActionTypes.UPDATE_STROKES:
+            if(!Number.isInteger(payload.strokes) || payload.strokes < 1) {
+                return state;
+            }
+            if(!payload.hole || typeof state[payload.hole] !== 'object') {
+                return state;
+            }
+
             const newState = {...state}
             
-            if(payload.hole && payload.strokes) {
-                newState[payload.hole] = {
-                    ...state[payload.hole],
-                    strokes: payload.strokes
-                };
-                const newTotals = calculateTotals(newState);
-                newState.plusMinus = newTotals.plusMinus;
-                newState.score = newTotals.total;
-            }
+            newState[payload.hole] = {
+                ...state[payload.hole],
+                strokes: payload.strokes
+            };
+            const newTotals = calculateTotals(newState);
+            newState.plusMinus = newTotals.plusMinus;
+            newState.strokes = newTotals.total;
             return newState;
         case ActionTypes.UPDATE_PLAYER_NAME:
             return {...state, playerName: payload};
@@ -60,7 +70,7 @@ export const buildDefaultScorecard = (course: Course, playerName?: string): Scor
         date: new Date(),
         course: course.name,
         plusMinus: 0,
-        score: 0
+        strokes: 0
     } as Scorecard;
 
     if(playerName?.length) {

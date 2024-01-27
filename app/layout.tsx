@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.scss'
+import AppProviders from './appProviders';
 import Sidebar from './sidebar';
 import Header from './header';
 
@@ -15,11 +16,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <Header />
-        <Sidebar />
-        {children}
-      </body>
+      <AppProviders>
+        <body>
+          <Header />
+          <Sidebar />
+          {children}
+        </body>
+      </AppProviders>
     </html>
   )
 }

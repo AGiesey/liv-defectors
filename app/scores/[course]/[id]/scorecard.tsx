@@ -5,6 +5,7 @@ import { Course } from '@/types/course';
 import { Hole } from '@/types/hole';
 import { Scorecard } from '@/types/scorecard';
 import scorecardReducer, {ActionTypes, buildDefaultScorecard} from './scorecard-reducer';
+import { Field, Box, Label, Radio, Button } from 'theme-ui'
 
 export default function Scorecard({course}: {course: Course}) {
     const { scorecard, name }: { scorecard: Hole[], name: string } = course;
@@ -40,19 +41,49 @@ export default function Scorecard({course}: {course: Course}) {
         scorecardDispatch({type: ActionTypes.UPDATE_STROKES, payload: {hole: holeNumber, strokes}});        
     }
 
-    const toggleEditMode = (e: React.MouseEvent<HTMLDivElement>): void => {
+    const saveRound = (): void => {
         //TODO: implement;
     }
     
     return (
         <div className={styles.main}>
-            <div>
-                <label htmlFor="nameEntry">Enter your name:</label>
-                <input
-                    type="text"
-                    id="nameEntry"
-                    onBlur={(e: React.FocusEvent<HTMLInputElement>) => scorecardDispatch({type: ActionTypes.UPDATE_PLAYER_NAME, payload: e.currentTarget.value})}/>
-            </div>
+            <Box as="form" my={'1em'} onSubmit={(e) => e.preventDefault()}>
+                <div className={styles.controls}>
+                    <div>
+                        <Label htmlFor="nameEntry">Enter your name:</Label>
+                        <Field
+                            sx={{
+                                width: '15em',
+                                mt: '.5em',
+                                mb: '1em'
+                            }}
+                            type="text"
+                            id="nameEntry"
+                            onBlur={(e: React.FocusEvent<HTMLInputElement>) => scorecardDispatch({type: ActionTypes.UPDATE_PLAYER_NAME, payload: e.currentTarget.value})}
+                        />
+                    </div>
+                    
+                    <div>
+                        <Label sx={{mb: '.5em'}} htmlFor="selectedNine">Pick your side:</Label>
+                        <Label >
+                            <Radio name="selectedNine"
+                                defaultChecked={selectedNine === outNine}
+                                onChange={() => setSelectedNine(outNine)}
+                            />
+                            Front Nine
+                        </Label>
+                        <Label>
+                            <Radio name="selectedNine"
+                                value="in"
+                                onChange={() => setSelectedNine(inNine)}
+                            />
+                            Back Nine
+                        </Label>
+                    </div>
+                    
+
+                </div>
+            </Box>
             <div className={styles.cardGrid}>
             
 
@@ -94,16 +125,15 @@ export default function Scorecard({course}: {course: Course}) {
                 {
                     selectedNine && selectedNine
                         .map(({Hole}) => 
-                            <div key={Hole} onClick={toggleEditMode}>
-                                <input
-                                    type="text"
+                            <Box as="form" key={Hole}>
+                                <Field
                                     // These arent stopping me from entering non positive integers
                                     inputMode="numeric" 
                                     pattern="[0-9]*"
                                     id={Hole.toString()}
                                     className={styles.scoreInput}
-                                    onBlur={updateScorecard}/>
-                            </div>
+                                    onBlur={updateScorecard} />
+                            </Box>
                         )
                 }
 
@@ -113,6 +143,8 @@ export default function Scorecard({course}: {course: Course}) {
                 
 
             </div>
+
+            <Button mt={3} onClick={saveRound}>Complete Round</Button>
         </div>
     )
 }

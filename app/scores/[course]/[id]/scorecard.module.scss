@@ -6,6 +6,11 @@
     height: 250px;
 }
 
+.controls {
+    @include flex;
+    gap: 2em;
+}
+
 
 .cardGrid {
     display: grid;
@@ -23,7 +28,8 @@
 }
 
 .headerRow {
-    background: $white-dark;
+    background: $highlight;
+    
     font-weight: bold;
 }
 

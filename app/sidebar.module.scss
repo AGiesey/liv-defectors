@@ -5,8 +5,8 @@
     width: $sidebar-width;
     min-height: 100vh;
     padding-top: calc($header-height + $spacer-md);
-    background: $grey-dark;
-    color: $grey-light;
+    background: $accent;
+    color: $highlight;
 }
 
 .nav {
@@ -21,8 +21,7 @@
     padding-left: $spacer-md;
     
     &.active {
-        background: $grey-medium;
-        color: $white-dark;
+        background: rgba($highlight, .2);
     }
 }
 

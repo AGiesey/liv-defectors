@@ -1,4 +1,3 @@
-/** @jsxImportSource theme-ui */
 "use client";
 import { useState } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
@@ -21,7 +20,7 @@ export default function CourseSearch() {
     return (
         <Box as="form" mt={2} onSubmit={(e) => e.preventDefault()}>
             <Label htmlFor="courseSearchInput" mb={1}>Course Name</Label>
-            <Field id="courseSearchInput" name="courseSearchInput" value={searchValue} onChange={(e) => setSearchValue(e.target.value)}/>
+            <Field id="courseSearchInput" sx={{width:'25em'}} name="courseSearchInput" value={searchValue} onChange={(e) => setSearchValue(e.target.value)}/>
             <Button mt={1} onClick={goToResults}>Search</Button>
         </Box>
     )

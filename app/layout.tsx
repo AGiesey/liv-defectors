@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.scss'
-import AppProviders from './appProviders';
+import AppProviders from './app-providers';
 import Sidebar from './sidebar';
 import Header from './header';
 

@@ -1,5 +1,6 @@
 import styles from '@/app/page.module.scss';
 import CourseSearch from './course-search';
+import MyScores from './my-scores';
 
 export default function Forum() {
     return (
@@ -10,6 +11,9 @@ export default function Forum() {
                 <p>Find the course you are playing by entering the course name below</p>
                 
                 <CourseSearch />
+            </div>
+            <div>
+                <MyScores />
             </div>
         </main>
     )

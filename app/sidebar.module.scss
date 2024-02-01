@@ -15,13 +15,18 @@
 }
 
 .link {
-    @include flex-column;
-    justify-content: center;
-    height: 35px;
+    @include flex;
+    gap: 1em;
+    align-items: center;
+    height: 4em;
     padding-left: $spacer-md;
     
     &.active {
         background: rgba($highlight, .2);
+    }
+
+    svg {
+        font-size: 1.5em;
     }
 }
 

@@ -14,7 +14,7 @@ export default function Home() {
       </div>
 
       <div>
-        <h1>Liv Defectors</h1>
+        <h2>Liv Defectors</h2>
         
         <p>Fairways and Greens, That&apos;s how we roll.</p>
       </div>

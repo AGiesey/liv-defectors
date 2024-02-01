@@ -8,7 +8,8 @@ export default async function Course({ params }: { params: { course: string } })
 
     return (
         <main className={styles.main}>
-            <h3>Your seach of <span>{decodedSearchValue}</span> resulted in the following courses:</h3>
+            <h1>Scores</h1>
+            <h3 className={styles.sectionTitle}>Your seach of <span>{decodedSearchValue}</span> resulted in the following courses:</h3>
             <p>Select your course from the list below to go to the scorecard.</p>
             {coursesList.length && <CoursesList courses={coursesList}/>}
         </main>

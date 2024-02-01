@@ -7,8 +7,8 @@ export default function Forum() {
         <main className={styles.main}>
             <h1>SCORES</h1>
             <div>
-                <h2>Course Search</h2>
-                <p>Find the course you are playing by entering the course name below</p>
+                <h2 className={styles.sectionTitle}>Course Search</h2>
+                <p className={styles.sectionSubtitle}>Find the course you are playing by entering the course name below:</p>
                 
                 <CourseSearch />
             </div>

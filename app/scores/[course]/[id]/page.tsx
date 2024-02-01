@@ -15,7 +15,7 @@ export default async function Course({ params }: { params: { course: string, id:
 
     return (
         <main className={styles.main}>
-            <h3>{course?.name}</h3>
+            <h1>{course?.name}</h1>
             {course && <Scorecard course={course} />}
         </main>
     )

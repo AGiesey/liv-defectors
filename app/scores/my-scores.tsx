@@ -1,6 +1,7 @@
 'use client';
 import { useContext } from 'react';
 import { RoundsContext } from '@/app/rounds-context';
+import styles from '@/app/page.module.scss';
 import { Card } from 'theme-ui';
 
 export default function MyScores() {
@@ -12,7 +13,7 @@ export default function MyScores() {
      */
     return (
         <div>
-            <h3>My Scores</h3>
+            <h2 className={styles.sectionTitle}>My Scores</h2>
             {
                 Object.entries(rounds).map(([key, value]) => {
                     //This only works because there's only 1 golfer right now

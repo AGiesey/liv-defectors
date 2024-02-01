@@ -8,6 +8,6 @@ export interface Scorecard {
     [holeNumber: number]: {
         par: number,
         strokes?: number,
-        //todo: it would be fun to add metrics such as putts, gir, fairway, etc...
+        //TODO: it would be fun to add metrics such as putts, gir, fairway, etc...
     };
 }

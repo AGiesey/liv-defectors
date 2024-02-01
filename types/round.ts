@@ -1,6 +1,8 @@
+import { Scorecard } from "./scorecard";
+
 export interface Round {
     courseName: string;
     courseId: string;
     date: Date;
-    [golferName: string]: {}
+    golfers: {[golferName: string]: Scorecard};
 }

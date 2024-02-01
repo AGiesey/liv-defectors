@@ -5,6 +5,7 @@ import { Scorecard } from "@/types/scorecard";
 export enum ActionTypes {
     "UPDATE_STROKES",
     "UPDATE_PLAYER_NAME",
+    "UPDATE_TEE"
 }
 
 interface Action  {
@@ -16,6 +17,7 @@ interface Totals {
     plusMinus: number, 
     total: number
 }
+
 
 const calculateTotals = (scorecard: Scorecard): Totals => {
     const scorecardHoles = Object.values(scorecard)
@@ -56,6 +58,8 @@ const scorecardReducer = (state: Scorecard, action: Action): Scorecard => {
             return newState;
         case ActionTypes.UPDATE_PLAYER_NAME:
             return {...state, playerName: payload};
+        case ActionTypes.UPDATE_TEE:
+            return {...state, tee: payload};
         default:
             console.warn(`ScorecardReducer() called with unknown action: ${type}`);
             return state;
